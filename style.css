@@ -1,130 +1,119 @@
-body{   
-    /* background-color: black; */
+body {
+  /* background-color: black; */
 }
-.video-container{
-    width: 0%;
+.video-container {
+  width: 0%;
 }
-.background-image{
-    background-image: url('assets/images/bg.jpg') ;
-    background-repeat: no-repeat;
-    background-size: 100vw 100vh;  
-    height: 100vh;
- }
-.menu{
-    background-color: #242B2E;
-    display: flex;
-    justify-content: space-around;
-    padding: 8px;
-    
+.background-image {
+  background-image: url("assets/images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  height: 100vh;
+}
+.menu {
+  background-color: #242b2e;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px;
 }
 
-.logo{
-    font-size: 24px;
-    color: white;
-    text-decoration: none;   
-    
-} 
+.logo {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
 .image {
-background-position: center ;
-
-} 
-.row { 
-    display: flex;
-    flex-direction: row;
+  background-position: center;
+}
+.row {
+  display: flex;
+  flex-direction: row;
 }
 
-.row-item{
-    flex:1;
-    display: flex;
-    justify-content: center;
-    
-    align-items: center;
-    flex-direction: column;
-} 
+.row-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  flex-direction: column;
+}
 .ner {
-    display: flex;
-  justify-content: center ;
-
-
+  display: flex;
+  justify-content: center;
 }
-.content { 
+.content {
   width: 100px;
-   
-
-
 }
 
-
-.zurag{
-    height: 100vh;
-    flex: 3;
-   
-    
+.zurag {
+  height: 100vh;
+  flex: 3;
 }
 
-.zurag img{
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
+.zurag img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
-.tailbar:hover{
-    transform: scale(1.1)
+.tailbar:hover {
+  transform: scale(1.1);
 }
-.tailbar{
-    background-color: #242B2E;
-    height: 100vh;
-    margin: 0px;
-    color: white;
-    transition: transform 0.5s;
+.tailbar {
+  background-color: #242b2e;
+  height: 100vh;
+  margin: 0px;
+  color: white;
+  transition: transform 0.5s;
 }
 
-
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
 }
 .text-container {
-    height: 10vh;
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text-container a {
+  margin: 0;
+  font-size: 64px;
+  color: rgba(225, 225, 225, 0.01);
+  background-image: url("https://images.unsplash.com/photo-1499195333224-3ce974eecb47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2cf549433129d4227d1879347b9e78ce&auto=format&fit=crop&w=1248&q=80");
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  animation: animate 15s ease-in-out infinite;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    background-position: left top;
   }
-  
-  .text-container a{
-    margin: 0;
-    font-size: 64px;
-    color: rgba(225,225,225, .01);
-    background-image: url("https://images.unsplash.com/photo-1499195333224-3ce974eecb47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2cf549433129d4227d1879347b9e78ce&auto=format&fit=crop&w=1248&q=80");
-    background-repeat: repeat;
-    -webkit-background-clip:text;
-    animation: animate 15s ease-in-out infinite;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 900;
+  25% {
+    background-position: right bottom;
   }
-  
-    @keyframes animate {
-      0%, 100% {
-        background-position: left top;
-      }
-      25%{
-        background-position: right bottom;
-       }
-      50% {
-        background-position: left bottom;
-      }
-      75% {
-        background-position: right top;
-      }   
+  50% {
+    background-position: left bottom;
   }
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 50;
+  75% {
+    background-position: right top;
   }
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+}
