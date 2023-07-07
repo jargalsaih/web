@@ -1,0 +1,57 @@
+body{   
+
+   /* background-color: black; */
+}
+.video-container{
+    
+}
+.background-image{
+    background-image: url('assets/images/michele-feola--t40mnV3vAU-unsplash.jpg') ;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;  
+    height: 100vh;
+}
+.menu{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    
+}
+
+.logo{
+    font-size: 24px;
+    color: white;
+    text-decoration: none;   
+    
+    
+} 
+.image {
+background-position: center ;
+
+} 
+.row { 
+    display: flex;
+    flex-direction: row;
+}
+
+.row-item{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    flex-direction: column;
+} 
+.ner {
+    display: flex;
+  justify-content: center ;
+
+
+}
+.content { 
+  width: 100px;
+   
+
+
+}

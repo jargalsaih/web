@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuur huudas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Arial;
+      font-size: 17px;
+    }
+
+    .content {
+      position: fixed;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: beige;
+      width: 100vw;
+      padding: 20px;
+    }
+    #myBtn {
+      width: 100px;
+      font-size: 18px;
+      padding: 10px;
+      border: none;
+      background: black;
+      color: beige;
+      cursor: pointer;
+    }
+    #myBtn :hover {
+      background: bisque;
+      color: black;
+    }
+    .video {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
+  </style>
+  <body>
+    <div class="content">
+      <h1></h1>
+      <p>NISHUDA SHILDEG TOGLOGCH</p>
+      <dutton id="myBtn" onclick="myFuction()">Pause</dutton>
+    </div>
+
+    <div class="menu">
+      <a href="" class="logo"> jargalsaihan </a>
+      <a href="" class="logo"> batzaya </a>
+      <a href="" class="logo"> nomio </a>
+    </div>
+    <!-- <div class="video-container"> -->
+    <video class="video" autoplay loop controls src="unalt.mp4"></video>
+    <!-- </div> -->
+
+    <div class="row background-image">
+      <div class="row-item">
+        <h1>batsumber</h1>
+        <h2 class="ner">noimor=4 ner-nomio</h2>
+      </div>
+      <h1 class="row-item">jargalant</h1>
+    </div>
+    <script>
+      var video = document.getElementById("myVideo");
+      var btn = document.getElementById("myBtn");
+      function myFuction() {
+        if (video.paused) {
+          video.play();
+          btn.innerHTML = "Pause";
+        } else {
+          video.pause();
+          btn.innerHTML = "Play";
+        }
+      }
+    </script>
+  </body>
+</html>
